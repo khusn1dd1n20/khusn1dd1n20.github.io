@@ -630,3 +630,347 @@ nav a:hover {
         margin-top: 5px;
     }
 }
+/* ========================================
+   MOBILE / TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+    header {
+        padding: 15px 20px;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .language-switcher {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+        padding: 70px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* ACCOUNTING SHOWCASE */
+    .accounting-showcase {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 35px;
+    }
+
+    .showcase-text {
+        max-width: 100%;
+    }
+
+    .showcase-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .showcase-image img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+
+    /* SKILLS */
+    .skills {
+        padding: 60px 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* EDUCATION */
+    .education {
+        padding: 60px 20px;
+    }
+
+    .education-card {
+        width: 100%;
+        max-width: 700px;
+    }
+
+
+    /* LANGUAGES */
+    .languages {
+        padding: 60px 20px;
+    }
+
+    .languages-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .language-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* PROJECTS */
+    .projects {
+        padding: 60px 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* CONTACT */
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    .contact-card a {
+        word-break: break-word;
+    }
+}
+
+
+/* ========================================
+   MOBILE PHONE
+======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .language-switcher button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 21px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .btn,
+    .button {
+        display: inline-block;
+        padding: 13px 25px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* SHOWCASE ITEMS */
+
+    .showcase-item {
+        padding: 15px;
+    }
+
+    .showcase-item span {
+        font-size: 26px;
+    }
+
+
+    /* SECTION TITLES */
+
+    .about h2,
+    .skills h2,
+    .education h2,
+    .languages h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-card {
+        padding: 25px 18px;
+    }
+
+    .contact-card p {
+        font-size: 14px;
+    }
+}
+
+
+/* Prevent horizontal scrolling */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+/* MOBILE MENU */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #00a8ff;
+    color: #00a8ff;
+    font-size: 26px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/* TELEFON */
+
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+        padding: 18px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        background: #02080d;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 25px 0;
+
+        z-index: 9999;
+
+        border-top: 1px solid rgba(0,168,255,0.2);
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        font-size: 17px;
+    }
+
+    .language-switcher {
+        display: flex;
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+}

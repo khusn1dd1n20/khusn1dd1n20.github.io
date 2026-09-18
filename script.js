@@ -155,3 +155,22 @@ document.addEventListener("DOMContentLoaded", function() {
     changeLanguage(savedLanguage);
 
 });
+function toggleMenu() {
+    const nav = document.getElementById("mainNav");
+    nav.classList.toggle("active");
+}
+
+
+/* Menu ichidagi link bosilganda menu yopiladi */
+
+document.querySelectorAll("#mainNav a").forEach(link => {
+
+    link.addEventListener("click", function() {
+
+        const nav = document.getElementById("mainNav");
+
+        nav.classList.remove("active");
+
+    });
+
+});
