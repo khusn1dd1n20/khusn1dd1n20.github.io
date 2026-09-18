@@ -369,3 +369,264 @@ nav a:hover {
 .contact-card a:hover {
     color: #0095ff;
 }
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text h2 {
+        font-size: 23px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* SECTIONS */
+    .about,
+    .skills,
+    .education,
+    .languages,
+    .projects,
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .about h2,
+    .skills h2,
+    .education h2,
+    .languages h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+
+    /* CARDS */
+    .skills-container,
+    .languages-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .education-card,
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    nav {
+        gap: 10px 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+}
+/* ACCOUNTING SHOWCASE */
+
+.accounting-showcase {
+    padding: 80px 12%;
+    background: #061b2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.showcase-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.showcase-text h2 {
+    color: #00a8ff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.showcase-text > p {
+    color: #b8c7d9;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.showcase-items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.showcase-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background: #0b2438;
+    border: 1px solid rgba(0, 168, 255, 0.25);
+    border-radius: 12px;
+}
+
+.showcase-item span {
+    font-size: 32px;
+}
+
+.showcase-item h3 {
+    color: #8b5cf6;
+    margin: 0 0 5px;
+}
+
+.showcase-item p {
+    color: #b8c7d9;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.showcase-image {
+    flex: 1;
+    max-width: 650px;
+}
+
+.showcase-image img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid #00a8ff;
+    box-shadow: 0 0 30px rgba(0, 168, 255, 0.25);
+}
+
+
+/* PHONE */
+
+@media (max-width: 768px) {
+
+    .accounting-showcase {
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .showcase-text {
+        width: 100%;
+    }
+
+    .showcase-text h2 {
+        font-size: 30px;
+    }
+
+    .showcase-item {
+        text-align: left;
+    }
+
+    .showcase-image {
+        width: 100%;
+    }
+}
+/* LANGUAGE SWITCHER */
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 10px;
+}
+
+.language-switcher button {
+    background: transparent;
+    color: #b8c7d9;
+    border: 1px solid #00a8ff;
+    border-radius: 6px;
+    padding: 6px 9px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-switcher button:hover {
+    background: #00a8ff;
+    color: white;
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

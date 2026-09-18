@@ -12,14 +12,19 @@
     <div class="logo">Portfolio</div>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#languages">Languages</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="resume.pdf" target="_blank">📄 Resume</a>
+       <a href="#home" data-i18n="home">Home</a>
+<a href="#about" data-i18n="about">About</a>
+<a href="#skills" data-i18n="skills">Skills</a>
+<a href="#education" data-i18n="education">Education</a>
+<a href="#languages" data-i18n="languages">Languages</a>
+<a href="#projects" data-i18n="projects">Projects</a>
+<a href="#contact" data-i18n="contact">Contact</a>
+<a href="resume.pdf" target="_blank" data-i18n="resume">📄 Resume</a>
+        <div class="language-switcher">
+    <button onclick="changeLanguage('en')">EN</button>
+    <button onclick="changeLanguage('uz')">UZ</button>
+    <button onclick="changeLanguage('ru')">RU</button>
+</div>
     </nav>
 </header>
 <section id="home" class="hero">
@@ -31,21 +36,68 @@
     <div class="hero-text">
         <h1>Husniddin</h1>
 
-        <h2>Professional Accountant</h2>
+<h2 data-i18n="profession">
+    Professional Accountant
+</h2>
 
-        <p>
-            Accounting, taxation and financial reporting specialist.
-            Experienced in 1C, tax reporting, payroll and business support.
-        </p>
+<p data-i18n="heroText">
+    Accounting, taxation and financial reporting specialist.
+    Experienced in 1C, tax reporting, payroll and business support.
+</p>
 
-        <a href="#projects" class="button">View Projects</a>
+<a href="#projects" class="button" data-i18n="viewProjects">
+    View Projects
+</a>
     </div>
 
 </section>
 <section id="about" class="about">
 
     <h2>About Me</h2>
+<section class="accounting-showcase">
 
+    <div class="showcase-text">
+        <h2>Accounting in Practice</h2>
+
+        <p>
+            Professional accounting requires accuracy, analysis
+            and attention to every financial detail.
+        </p>
+
+        <div class="showcase-items">
+
+            <div class="showcase-item">
+                <span>🧮</span>
+                <div>
+                    <h3>Accounting</h3>
+                    <p>Daily accounting operations and financial records.</p>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <span>📊</span>
+                <div>
+                    <h3>Financial Analysis</h3>
+                    <p>Analysis of financial data and business performance.</p>
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <span>📑</span>
+                <div>
+                    <h3>Tax Reporting</h3>
+                    <p>Preparation of accurate and timely tax reports.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="showcase-image">
+        <img src="accounting-workspace.png" alt="Accounting workspace">
+    </div>
+
+</section>
     <div class="about-content">
         <h3>Professional Accountant</h3>
 
@@ -63,38 +115,50 @@
 </section>
 <section id="skills" class="skills">
 
-    <h2>Skills</h2>
+    <h2 data-i18n="skillsTitle">Skills</h2>
 
     <div class="skills-container">
 
         <div class="skill-card">
-            <h3>1C Accounting</h3>
-            <p>Accounting operations and financial records in 1C.</p>
+            <h3 data-i18n="skill1Title">1C Accounting</h3>
+            <p data-i18n="skill1Text">
+                Accounting operations and financial records in 1C.
+            </p>
         </div>
 
         <div class="skill-card">
-            <h3>Tax Accounting</h3>
-            <p>Tax calculations, reporting and tax compliance.</p>
+            <h3 data-i18n="skill2Title">Tax Accounting</h3>
+            <p data-i18n="skill2Text">
+                Tax calculations, reporting and tax compliance.
+            </p>
         </div>
 
         <div class="skill-card">
-            <h3>Payroll</h3>
-            <p>Payroll calculation, personal income tax and social tax.</p>
+            <h3 data-i18n="skill3Title">Payroll</h3>
+            <p data-i18n="skill3Text">
+                Payroll calculation, personal income tax and social tax.
+            </p>
         </div>
 
         <div class="skill-card">
-            <h3>Microsoft Excel</h3>
-            <p>Financial calculations, reports and data analysis.</p>
+            <h3 data-i18n="skill4Title">Microsoft Excel</h3>
+            <p data-i18n="skill4Text">
+                Financial calculations, reports and data analysis.
+            </p>
         </div>
 
         <div class="skill-card">
-            <h3>Financial Reporting</h3>
-            <p>Preparation and analysis of financial statements.</p>
+            <h3 data-i18n="skill5Title">Financial Reporting</h3>
+            <p data-i18n="skill5Text">
+                Preparation and analysis of financial statements.
+            </p>
         </div>
 
         <div class="skill-card">
-            <h3>Bank Operations</h3>
-            <p>Bank statements, payments and reconciliation.</p>
+            <h3 data-i18n="skill6Title">Bank Operations</h3>
+            <p data-i18n="skill6Text">
+                Bank statements, payments and reconciliation.
+            </p>
         </div>
 
     </div>
@@ -223,5 +287,6 @@
     </div>
 
 </section>
+<script src="script.js"></script>
 </body>
 </html>
